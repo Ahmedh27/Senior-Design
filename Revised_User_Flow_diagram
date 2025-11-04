@@ -1,0 +1,19 @@
+flowchart TD
+    A[Browse Available Properties] --> B[View Property Details]
+    B --> C[Click 'Analyze Reuse Potential']
+    C --> D{Logged In?}
+    D -->|No| E[Quick Sign Up / Log In]
+    D -->|Yes| F[Input Property Info or Select from Map]
+    E --> F
+    F --> G[Choose Reuse Type]
+    G --> H{Reuse Option Selected?}
+    H -->|Convert to Housing| I[View Zoning and Feasibility Data]
+    H -->|Create Co-working Space| J[Analyze Market Demand + Utilities]
+    H -->|Community Center| K[View Neighborhood Demographics + Needs]
+    I --> L[Generate Reuse Report]
+    J --> L
+    K --> L
+    L --> M[Add Notes or Questions]
+    M --> N[Submit for Review or Policy Insight]
+    N --> O[Confirmation Sent]
+    O --> P[Track Project Impact / Updates]
